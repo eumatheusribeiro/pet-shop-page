@@ -1,6 +1,39 @@
+:host {
+  width: 100vh;
+}
 
-.header {
-  background-color: rgba(250, 201, 96, 0.829);
+.header, .section {
   padding-left: 7rem;
   padding-right: 7rem;
+}
+
+.header, .main {
+  background-color: rgba(250, 201, 96, 0.829);
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(../../../assets/paw-cat.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  .main-title {
+    display: flex;
+    justify-content: left;
+    font-size: 2rem;
+    color: rgb(39, 71, 90);
+
+    h1 {
+      font-weight: 400;
+    }
+    strong {
+      color: rgb(52, 102, 177);
+    }
+  }
+
+  .banner {
+    transform: scaleX(-1);
+  }
 }
