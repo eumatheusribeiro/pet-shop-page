@@ -1,0 +1,30 @@
+.page-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  color: rgb(39, 71, 90);
+  border-bottom: 2px solid rgb(52, 102, 177);
+
+  strong {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+}
+
+.menu-list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+
+  .menu-select {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+
+    .activated {
+      font-weight: bold;
+      border-bottom: 2px solid rgb(46, 86, 146);
+    }
+  }
+}
