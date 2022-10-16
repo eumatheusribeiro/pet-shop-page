@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CardModule } from '../../components/card/card.module';
 import { HeaderModule } from '../../components/header/header.module';
 import { HomeComponent } from './home.component';
 
@@ -11,7 +12,8 @@ import { HomeComponent } from './home.component';
   ],
   imports: [
     CommonModule,
-    HeaderModule
+    HeaderModule,
+    CardModule
   ],
   exports: [
     HomeComponent

@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { IconsModule } from '../../icons/icons.module';
 import { CardComponent } from './card.component';
 
 
@@ -9,7 +10,11 @@ import { CardComponent } from './card.component';
     CardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IconsModule
+  ],
+  exports: [
+    CardComponent
   ]
 })
 export class CardModule { }

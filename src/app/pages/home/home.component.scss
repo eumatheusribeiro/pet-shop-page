@@ -1,10 +1,23 @@
 :host {
   width: 100vh;
+  color: rgb(47, 88, 112);
 }
 
 .header, .section {
   padding-left: 7rem;
   padding-right: 7rem;
+}
+
+.section {
+  &__title {
+    color: rgb(39, 71, 90);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+
+  &__subtitle {
+    font-size: .8rem;
+  }
 }
 
 .header, .main {
@@ -36,4 +49,14 @@
   .banner {
     transform: scaleX(-1);
   }
+}
+
+.services {
+  padding-top: 1.5rem;
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }

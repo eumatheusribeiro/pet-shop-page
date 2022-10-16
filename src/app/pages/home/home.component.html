@@ -2,11 +2,47 @@
 <div class="header">
   <app-header></app-header>
 </div>
-<section class="section main">
+<section id="main" class="section main">
   <div class="main-title">
     <h1>Best help for <br><strong>your best friends</strong></h1>
   </div>
   <div class="banner">
     <img src="../../../assets/cat-banner.png" alt="">
+  </div>
+</section>
+<section id="services" class="section services">
+  <h4 class="section__title">our services</h4>
+  <p class="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <div class="cards">
+    <app-card
+      [icon]="'pills'"
+      [title]="'Medical tratament for pets'"
+      [contentText]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque consequuntur natus rerum voluptatem! Deleniti vero perferendis, voluptatibus sed ipsam architecto non officiis.'"
+    ></app-card>
+    <app-card
+      [icon]="'heart-pulse'"
+      [title]="'Treatment for heart related diseases'"
+      [contentText]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque consequuntur natus rerum voluptatem! Deleniti vero perferendis, voluptatibus sed ipsam architecto non officiis.'"
+    ></app-card>
+    <app-card
+      [icon]="'syringe'"
+      [title]="'Vaccination for your lovely pets'"
+      [contentText]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque consequuntur natus rerum voluptatem! Deleniti vero perferendis, voluptatibus sed ipsam architecto non officiis.'"
+    ></app-card>
+    <app-card
+      [icon]="'ruler'"
+      [title]="'Grooming & beauty care for pets'"
+      [contentText]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque consequuntur natus rerum voluptatem! Deleniti vero perferendis, voluptatibus sed ipsam architecto non officiis.'"
+    ></app-card>
+    <app-card
+      [icon]="'bone'"
+      [title]="'Balanced nutrition in the meal'"
+      [contentText]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque consequuntur natus rerum voluptatem! Deleniti vero perferendis, voluptatibus sed ipsam architecto non officiis.'"
+    ></app-card>
+    <app-card
+      [icon]="'baseball'"
+      [title]="'Active and recreational for pets'"
+      [contentText]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque consequuntur natus rerum voluptatem! Deleniti vero perferendis, voluptatibus sed ipsam architecto non officiis.'"
+    ></app-card>
   </div>
 </section>
