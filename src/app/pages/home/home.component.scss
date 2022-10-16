@@ -110,3 +110,35 @@
     }
   }
 }
+
+.feedback {
+  padding-top: 1.5rem;
+
+  .content {
+    padding: 1.5rem 8rem;
+  }
+}
+
+.carousel {
+  &__content {
+    margin: 0 2rem;
+    display: flex;
+    gap: 2rem;
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__list{
+    display: flex;
+    gap: .5rem;
+    list-style: none;
+  }
+}
+
+.text-yellow {
+  color: #d39614;
+}

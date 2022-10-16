@@ -64,3 +64,25 @@
     </li>
   </ul>
 </section>
+<section id="feedback" class="section feedback">
+  <h4 class="section__title">feedback</h4>
+  <div class="content">
+    <p-carousel [value]="depoiments" [autoplayInterval]="3000" [circular]="true">
+      <ng-template let-depoiment pTemplate="item" >
+          <div class="carousel__content">
+            <div class="carousel__content-left">
+              <img [src]="depoiment.image" alt="" height="150px" width="150px">
+            </div>
+            <div class="carousel__content-right">
+              <p class="carousel__text">"{{depoiment.content}}"</p>
+              <ul class="carousel__list">
+                <li *ngFor="let star of stars; let i = index" class="carousel__item" [ngClass]="{'text-yellow': i < depoiment.vote}">
+                  <fa-icon icon="star" class="fa-xs"></fa-icon>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</section>
