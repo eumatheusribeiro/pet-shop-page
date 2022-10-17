@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+
+  &__left {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__center {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+  }
+
+  &__right {
+    display: flex;
+    gap: .3rem;
+  }
+}

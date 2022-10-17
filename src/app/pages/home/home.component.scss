@@ -3,7 +3,7 @@
   color: rgb(47, 88, 112);
 }
 
-.header, .section {
+.header, .section, .footer {
   padding-left: 7rem;
   padding-right: 7rem;
 }
@@ -20,7 +20,7 @@
   }
 }
 
-.header, .main {
+.header, .main, .footer {
   background-color: rgba(250, 201, 96, 0.829);
 }
 
@@ -148,7 +148,7 @@
     display: flex;
     justify-content: left;
     gap: 2rem;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
   }
 
   &__line {

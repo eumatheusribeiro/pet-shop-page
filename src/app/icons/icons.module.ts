@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faBaseball, faBone, faBottleWater, faCalendar, faCat, faClock, faEnvelope, faHeartPulse, faMapLocation, faPhone, faPills, faRuler, faStar, faSyringe } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faSquareInstagram, faTiktok, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faCopyright } from '@fortawesome/free-regular-svg-icons';
+import { faBaseball, faBone, faBottleWater, faCalendar, faCat, faClock, faEnvelope, faHeartPulse, faMapLocation, faPhone, faPills, faRuler, faSprayCanSparkles, faStar, faSyringe } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -28,7 +30,13 @@ export class IconsModule {
       faCalendar,
       faClock,
       faEnvelope,
-      faPhone
+      faPhone,
+      faSquareInstagram,
+      faFacebook,
+      faTwitter,
+      faTiktok,
+      faSprayCanSparkles,
+      faCopyright
     );
   }
 }
