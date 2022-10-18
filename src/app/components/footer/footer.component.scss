@@ -24,3 +24,16 @@
     gap: .3rem;
   }
 }
+
+@media (max-width: 576px) {
+  .footer {
+    &__left{
+      font-size: .9rem;
+    }
+
+    &__right {
+      font-size: .7rem;
+    }
+  }
+
+}

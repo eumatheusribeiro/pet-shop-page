@@ -1,9 +1,15 @@
 <div class="page-name">
+  <div class="left-display">
+    <button class="button" (click)="toggleMenu()"><fa-icon icon="bars"></fa-icon></button>
+  </div>
   <strong class="">catmia <fa-icon icon="cat"></fa-icon></strong>
 </div>
 <nav class="menu">
-  <ul class="menu-list">
-    <a href="#main" class="menu-select ">
+  <ul class="menu-list" [@openAndClose]="isActive">
+    <div class="right">
+      <button class="button close" (click)="toggleMenu()"><fa-icon icon="close"></fa-icon></button>
+    </div>
+    <a href="#main" class="menu-select">
       <li class="menu-item activated">home</li>
     </a>
     <a href="#services" class="menu-select">
