@@ -5,18 +5,27 @@
 .header {
   margin-bottom: .3rem;
   h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: left;
+  }
+
+  fa-icon {
+    font-size: 1.7rem;
   }
 }
 
 .content {
-  font-size: .8rem;
+  font-size: 1rem;
   text-align: left;
 }
 
 @media (max-width: 576px) {
-  .content {
-    font-size: 1rem;
+  .header {
+    display: flex;
+    align-items: flex-start;
+    fa-icon {
+      font-size: 1.4rem;
+      margin-right: .5rem;
+    }
   }
 }

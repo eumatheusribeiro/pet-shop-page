@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { openAndClose } from 'src/app/animations/open-and-close';
 
 @Component({
@@ -9,14 +10,22 @@ import { openAndClose } from 'src/app/animations/open-and-close';
 })
 export class HeaderComponent implements OnInit {
   isActive = 'closed'
+  activatedLink = 0
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
   toggleMenu() {
     this.isActive = this.isActive == 'closed' ? 'open' : 'closed'
+  }
+
+  navigateToSection(fragment: string, index: number) {
+    this.activatedLink = index
+    this.router.navigateByUrl('#' + fragment, {skipLocationChange: true })
   }
 
 }

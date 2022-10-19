@@ -6,7 +6,8 @@
 
   &__left {
     display: flex;
-    gap: 1rem;
+    gap: 1.3rem;
+    font-size: 1.3rem;
 
     a {
       text-decoration: none;
@@ -27,13 +28,9 @@
 
 @media (max-width: 576px) {
   .footer {
-    &__left{
-      font-size: .9rem;
-    }
-
-    &__right {
-      font-size: .7rem;
-    }
+    font-size: 1rem;
+   flex-direction: column;
+   justify-content: center;
   }
 
 }

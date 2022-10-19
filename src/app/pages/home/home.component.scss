@@ -67,7 +67,7 @@
   padding: 3rem;
   text-align: center;
   background-color: rgb(48, 181, 190);
-  color: rgb(230, 223, 223);
+  color: rgb(238, 232, 232);
 
   &__title {
     font-size: 1.3rem;
@@ -411,7 +411,7 @@
 
   .section {
     &__title {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
 
     &__subtitle {
@@ -451,7 +451,7 @@
 
     &__title {
       margin-bottom: .5rem;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
 
     &__subtitle {
@@ -489,14 +489,13 @@
       align-items: center;
       gap: .5rem;
 
-      &-image {
-        height: 100px;
-        width: 100px;
+      &-left {
+        display: none;
       }
     }
 
     &__text {
-      font-size: .7rem;
+      font-size: 1rem;
     }
   }
 
@@ -518,20 +517,32 @@
 
     &__buttom {
       padding: .5rem 1rem;
-      font-size: .9rem;
+      font-size: 1.1rem;
     }
   }
 }
 
 @media (max-width: 450px) {
   .header, .footer {
-    font-size: .7rem;
+    font-size: 1rem;
   }
 
   .main {
     .main-title {
       font-size: 1rem;
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .header, .footer {
+    font-size: 1rem;
+  }
+
+  .main {
+    .banner {
+      display: none;
     }
   }
 }

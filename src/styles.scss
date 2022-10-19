@@ -5,3 +5,7 @@ html, body, div, nav, ul, li, p, h1, h2, h3, h4, h5, h6, a, strong {
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

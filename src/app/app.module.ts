@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
     HomeModule

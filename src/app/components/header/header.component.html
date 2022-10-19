@@ -4,25 +4,25 @@
   </div>
   <strong class="">catmia <fa-icon icon="cat"></fa-icon></strong>
 </div>
-<nav class="menu">
+<nav #menu class="menu">
   <ul class="menu-list" [@openAndClose]="isActive">
     <div class="right">
       <button class="button close" (click)="toggleMenu()"><fa-icon icon="close"></fa-icon></button>
     </div>
-    <a href="#main" class="menu-select">
-      <li class="menu-item activated">home</li>
+    <a (click)="navigateToSection('main', 0)" class="menu-select">
+      <li class="menu-item" [class.activated]="activatedLink == 0">home</li>
     </a>
-    <a href="#services" class="menu-select">
-      <li class="menu-item">services</li>
+    <a (click)="navigateToSection('services', 1)" class="menu-select">
+      <li class="menu-item" [class.activated]="activatedLink == 1">services</li>
     </a>
-    <a href="#about" class="menu-select">
-      <li cclass="menu-item">about us</li>
+    <a (click)="navigateToSection('about', 2)" class="menu-select">
+      <li cclass="navigateToSection-item" [class.activated]="activatedLink == 2">about us</li>
     </a>
-    <a href="#feedback" class="menu-select">
-      <li class="menu-item">feedback</li>
+    <a (click)="navigateToSection('feedback', 3)" class="menu-select">
+      <li class="menu-item" [class.activated]="activatedLink == 3">feedback</li>
     </a>
-    <a href="#contact" class="menu-select">
-      <li class="menu-item">contact</li>
+    <a (click)="navigateToSection('contact', 4)" class="menu-select">
+      <li class="menu-item" [class.activated]="activatedLink == 4">contact</li>
     </a>
   </ul>
 </nav>
