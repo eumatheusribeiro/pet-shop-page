@@ -11,19 +11,19 @@ export class HomeComponent implements OnInit {
   depoiments = [
     {
       id: 1,
-      image: 'pet-shop-page/assets/depoimento-1.png',
+      image: 'assets/depoimento-1.png',
       content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In culpa illo reiciendis saepe, quisquam earum ullam perspiciatis expedita veniam. Molestiae, harum repudiandae atque placeat natus rem quas distinctio eligendi in!',
       vote: 10
     },
     {
       id: 2,
-      image: 'pet-shop-page/assets/depoimento-2.png',
+      image: 'assets/depoimento-2.png',
       content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In culpa illo reiciendis saepe.',
       vote: 10
     },
     {
       id: 3,
-      image: 'pet-shop-page/assets/depoimento-3.png',
+      image: 'assets/depoimento-3.png',
       content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, harum repudiandae atque placeat natus rem quas distinctio eligendi in!',
       vote: 9
     }
